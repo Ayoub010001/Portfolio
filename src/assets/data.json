@@ -1,0 +1,104 @@
+{
+    "projects":[
+        {
+            "image":"/imgs/visite2030.png",
+            "title":"World Cup 2030 Stadium & Nearby Attractions Explorer",
+            "post":"Front-End Web Developer | UI UX Designer",
+            "description":"Created a React JS application showcasing the 17 stadiums hosting the World Cup 2030 in Morocco, Spain, and Portugal, and highlighting nearby places of interest.",
+            "skills":[
+                "React" , "JavaScript", "CSS", "Git", "GitHub", "Figma"
+            ]
+        },
+        {
+            "image":"/imgs/ciamProjects.png",
+            "title":"ENSAM Computer Science Club Website",
+            "post":"Front-End | Back-end Web Developer",
+            "description":"Developed a website section titled 'Activities' for the club, Created an interactive interface allowing members to view upcoming events and revisit past ones.",
+            "skills":[
+                "HTML" , "JavaScript", "CSS", "php", "MySQL"
+            ]
+        }
+    ],
+    "skills":{
+        "Programming languages":[
+            {
+             "name":"JavaScript",
+             "icon":"/icons/Javascript.png"
+            },
+            {
+             "name":"TypeScript",
+             "icon":"/icons/TypeScript.png"
+            },
+            {
+             "name":"JAVA",
+             "icon":"/icons/java.png"
+            },
+            {
+             "name":"php",
+             "icon":"/icons/php.png"
+            }
+        ],
+        "Web Technologies":[
+            {
+                "name":"React",
+                "icon":"/icons/react.png"
+            },
+            {
+                "name":"HTML 5",
+                "icon":"/icons/HTML5.png"
+            },
+            {
+                "name":"CSS 3",
+                "icon":"/icons/css3.png"
+            },
+            {
+             "name":"Tailwind css",
+             "icon":"/icons/TailwindCSS.png"
+            },
+            {
+             "name":"Bootstrap",
+             "icon":"/icons/bootstrap.png"
+            },
+            {
+             "name":"jQuery",
+             "icon":"/icons/jquery.png"
+            }
+        ],
+        "others":[
+            {
+                "name":"MySQL",
+                "icon":"/icons/MySql.png"
+            },
+            {
+                "name":"MongoDB",
+                "icon":"/icons/Mongodb.png"
+            },
+            {
+                "name":"Git",
+                "icon":"/icons/git.png"
+            },
+            {
+                "name":"GitHub",
+                "icon":"/icons/github.png"
+            }
+        ]
+
+    },
+    "experiences":[
+        {
+            "company":"TicEscort",
+            "duration":"15 July - 15 Aug 2023 ",
+            "title":"Employees Management System Development",
+            "post":"Front-End | Back-end Web Developer",
+            "description":"Created a React JS application showcasing the 17 stadiums hosting the World Cup 2030 in Morocco, Spain, and Portugal, and highlighting nearby places of interest.",
+            "skills":[
+                "php" , "JavaScript", "CSS", "HTML", "Bootstrap", "ChartJS"
+            ]
+        }
+
+    ],
+    "certifications":[{
+        "name":"Meta Front End developer certificate",
+        "certif":"/imgs/certif.png"
+    }]
+}
