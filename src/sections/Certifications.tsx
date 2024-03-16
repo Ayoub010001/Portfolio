@@ -11,7 +11,7 @@ function Certifications() {
           {
             certifications.map((certification, index)=>(
                 <div key={index} className='certif'>
-                  <img src={certification.certif}/>
+                  <img src={certification.certif} alt={certification.name}/>
                 </div>
             ))
           }

@@ -50,7 +50,7 @@ function Skills() {
                   }}
                   
                   key={index} className="skill-box">
-                    <img src={skill.icon}/>
+                    <img src={skill.icon} alt={skill.name}/>
                     <Tag skill={skill.name}/>
                   </motion.div>
                 ))
@@ -80,7 +80,7 @@ function Skills() {
                   }}
                   
                   key={index} className="skill-box">
-                    <img src={skill.icon}/>
+                    <img src={skill.icon} alt={skill.name}/>
                     <Tag skill={skill.name}/>
                   </motion.div>
                 ))
@@ -110,7 +110,7 @@ function Skills() {
                   }}
 
                   key={index} className="skill-box">
-                    <img src={skill.icon}/>
+                    <img src={skill.icon} alt={skill.name}/>
                     <Tag skill={skill.name}/>
                   </motion.div>
                 ))

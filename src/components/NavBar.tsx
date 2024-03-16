@@ -28,23 +28,33 @@ function NavBar() {
       <motion.ul className="nav-list"
         variants={container}
         initial="hidden"
-        animate="visible"
-      >
-        <a href="#projects">
-          <motion.li variants={item}><span className="green-text">01.</span>Projects</motion.li>
-        </a>
-        <a href="#skills">
-          <motion.li variants={item}><span className="green-text">02.</span>Skills</motion.li>
-        </a>
-        <a href="#experiences">
-          <motion.li variants={item}><span className="green-text">03.</span>experiences</motion.li>
-        </a>
-        <a href="#certifications">
-          <motion.li variants={item}><span className="green-text">04.</span>Certifications</motion.li>
-        </a>
-        <a href="#contacts">
-          <motion.li variants={item}><span className="green-text">05.</span>Contacts</motion.li>
-        </a>
+        animate="visible">
+
+        <motion.li variants={item}>
+          <a href="#projects">
+            <span className="green-text">01.</span>Projects
+          </a>
+        </motion.li>
+        <motion.li variants={item}>
+          <a href="#skills">
+            <span className="green-text">02.</span>Skills
+          </a>
+        </motion.li>
+        <motion.li variants={item}>
+          <a href="#experiences">
+            <span className="green-text">03.</span>experiences
+          </a>
+        </motion.li>
+        <motion.li variants={item}>
+          <a href="#certifications">
+            <span className="green-text">04.</span>Certifications
+          </a>
+        </motion.li>
+        <motion.li variants={item}>
+          <a href="#contacts">
+            <span className="green-text">05.</span>Contacts
+          </a>
+        </motion.li>
       </motion.ul>
     </nav>
   )
