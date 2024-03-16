@@ -1,6 +1,4 @@
 import Button from "../components/Button"
-import { LiaLinkedin } from "react-icons/lia";
-import { HiOutlineMail } from "react-icons/hi";
 
 function Contacts() {
   return (
