@@ -1,0 +1,51 @@
+#root {
+    --dark-blue: #0A192F;
+    --secondary-blue: #112240;
+    --hover-blue: #1a354e; 
+    /* if hover opacity: 0.32 if bg opacity: 1*/
+    --main-green:#33C989;
+}
+
+.btn{
+    font-family: "JetBrains Mono", Arial, sans-serif;
+    color: var(--main-green);
+    height: 48px;
+    font-size: 18px;
+    background-color: #0A192F;
+    border: 1px solid var(--main-green);
+    border-radius: 6px;
+    padding: 0 25px;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:after {
+    background-color: var(--main-green);
+    border-radius: 6px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(6px, 6px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+.btn:hover:after {
+    transform: translate(0, 0);
+}
+.btn:active {
+    background-color: var(--hover-blue);
+    outline: 0;
+}
+.btn:hover {
+    outline: 0;
+}
+@media (min-width: 768px) {
+    .btn {
+      padding: 0 40px;
+    }
+  }

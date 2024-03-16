@@ -1,12 +1,10 @@
 import Card from "../components/Card"
 import {projects} from "../assets/data.json"
 
-console.log(projects);
-console.log(projects[0]);
 
 function Projects() {
   return (
-    <section>
+    <section id="projects">
       <div className="max-width">
         <p className="section--title"><span className="green-text">01.</span> Projects</p> 
         <div className="project-cards-container">

@@ -1,5 +1,6 @@
 import Tag from './Tag'
-
+import { motion,useInView } from "framer-motion"
+import { useRef } from "react";
 
 interface Project{
     image:string,
@@ -13,14 +14,35 @@ interface CardProps {
     prj: Project; // Expecting a single project
 }
 
+// motion
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.6,
+        staggerChildren: 0.4
+      }
+    }
+  };
+
 
 
 function Card({prj}:CardProps) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
   return (
-    <div className="project-card">
+    <div className="project-card" ref={ref}
+    style={{
+        transform: isInView ? "none" : "translateX(200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+      }}
+    >
         <div className="card-img-container">
-            <div className='img-container'>
-                <img src={prj.image} />  
+            <div className='img-container' style={{backgroundImage: `url(${prj.image})`, backgroundSize: '100%'}}>
+                {/* <img src={prj.image} />   */}
             </div>
         </div>
         <div className="card-text-container">
@@ -30,14 +52,18 @@ function Card({prj}:CardProps) {
                 <div className="card-desc-container">
                     <p className="card-desc">{prj.description}</p>
                 </div>
-                <div className="tags-container">
+                <motion.div className="tags-container container"
+                variants={container}
+                initial="hidden"
+                animate="visible"
+                >
 
                 {
                     prj.skills.map((skill, index)=>{
                         return <Tag key={index} skill={skill}/>
                     })
                 }
-                </div>
+                </motion.div>
             </div>
         </div>
 

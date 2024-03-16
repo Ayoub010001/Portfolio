@@ -1,5 +1,8 @@
 import Tag from "../components/Tag"
 import {skills} from '../assets/data.json'
+import { motion,useInView } from "framer-motion"
+import { useRef } from "react";
+
 
 interface SkillType{
   name:string,
@@ -11,22 +14,45 @@ const tech:SkillType[] = skills["Web Technologies"];
 const others:SkillType[] = skills.others;
 
 function Skills() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const ref2 = useRef(null);
+  const isInView2 = useInView(ref2, { once: true });
+  const ref3 = useRef(null);
+  const isInView3 = useInView(ref3, { once: true });
   return (
-    <section>
+    <section id='skills'>
       <div className="max-width">
-        <p className="section--title"><span className="green-text">02.</span> Skills</p> 
+        <p className="section--title" 
+        ><span className="green-text">02.</span> Skills</p> 
         <div className="ml-18">
           <p className="section--sub-title">Here is a little bit about <span className="green-text">languages</span> ad <span className="green-text">technologies</span>. that I am currently using.</p>
           <div className="sub-section-container">
             <div className="sub-section-box">
               <p className="card-main-title">Programming languages:</p>
-              <div className="skills-list">
+              <div className="skills-list"
+                              ref={ref}
+                              style={{
+                                transform: isInView ? "none" : "translateX(-200px)",
+                                opacity: isInView ? 1 : 0,
+                                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+                              }}
+              >
               {
                 languages.map((skill,index)=>(
-                  <div key={index} className="skill-box">
+                  <motion.div
+                  
+                  whileHover={{ scale: 1.2, rotate: 15 }}
+                  whileTap={{
+                    scale: 0.8,
+                    rotate: -15,
+                    borderRadius: "100%"
+                  }}
+                  
+                  key={index} className="skill-box">
                     <img src={skill.icon}/>
                     <Tag skill={skill.name}/>
-                  </div>
+                  </motion.div>
                 ))
               }
               </div>
@@ -34,13 +60,29 @@ function Skills() {
 
             <div className="sub-section-box">
               <p className="card-main-title">Web Technologies:</p>
-              <div className="skills-list">
+              <div className="skills-list"
+                    ref={ref2}
+                    style={{
+                      transform: isInView2 ? "none" : "translateX(-200px)",
+                      opacity: isInView2 ? 1 : 0,
+                      transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+                    }}
+              >
               {
                 tech.map((skill,index)=>(
-                  <div key={index} className="skill-box">
+                  <motion.div
+                  
+                  whileHover={{ scale: 1.2, rotate: 15 }}
+                  whileTap={{
+                    scale: 0.8,
+                    rotate: -15,
+                    borderRadius: "100%"
+                  }}
+                  
+                  key={index} className="skill-box">
                     <img src={skill.icon}/>
                     <Tag skill={skill.name}/>
-                  </div>
+                  </motion.div>
                 ))
               }
               </div>
@@ -48,13 +90,29 @@ function Skills() {
 
             <div className="sub-section-box">
               <p className="card-main-title">Others:</p>
-              <div className="skills-list">
+              <div className="skills-list"
+                    ref={ref3}
+                    style={{
+                      transform: isInView3 ? "none" : "translateX(-200px)",
+                      opacity: isInView3 ? 1 : 0,
+                      transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+                    }}
+              >
               {
                 others.map((skill,index)=>(
-                  <div key={index} className="skill-box">
+                  <motion.div
+
+                  whileHover={{ scale: 1.2, rotate: 15 }}
+                  whileTap={{
+                    scale: 0.8,
+                    rotate: -15,
+                    borderRadius: "100%"
+                  }}
+
+                  key={index} className="skill-box">
                     <img src={skill.icon}/>
                     <Tag skill={skill.name}/>
-                  </div>
+                  </motion.div>
                 ))
               }
               </div>

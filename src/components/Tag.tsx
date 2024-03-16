@@ -1,3 +1,14 @@
+import { motion,useInView } from "framer-motion"
+import { useRef } from "react";
+
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
 
 interface Skill{
   skill:string
@@ -6,9 +17,9 @@ interface Skill{
 
 function Tag({skill}: Skill) {
   return (
-    <div className="tag">
+    <motion.div className="tag item"variants={item}>
         <p className="tag-Name">{skill}</p>
-    </div>
+    </motion.div>
   )
 }
 
