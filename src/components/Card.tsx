@@ -1,5 +1,7 @@
 import Tag from './Tag'
-import { motion,useInView } from "framer-motion"
+import { useInView } from "framer-motion"
+import { FiExternalLink } from "react-icons/fi";
+
 import { useRef } from "react";
 
 interface Project{
@@ -7,27 +9,13 @@ interface Project{
     title:string,
     post:string,
     description:string,
+    live:string,
     skills:string[]
 }
 
 interface CardProps {
     prj: Project; // Expecting a single project
 }
-
-// motion
-const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.6,
-        staggerChildren: 0.4
-      }
-    }
-  };
-
-
 
 function Card({prj}:CardProps) {
     const ref = useRef(null);
@@ -50,20 +38,21 @@ function Card({prj}:CardProps) {
                 <p className="green-sub-title">{prj.post}</p>
                 <h3 className="card-main-title">{prj.title}</h3>
                 <div className="card-desc-container">
-                    <p className="card-desc">{prj.description}</p>
+                    <p className="card-desc" dangerouslySetInnerHTML={{ __html: prj.description }}/>
+                    {
+                      prj.live !== "" && <div className='card-link'>
+                        <a target='_blank' href={prj.live}><p className='green-text'>Live version <FiExternalLink /></p></a>
+                      </div>
+                    }
+  
                 </div>
-                <motion.div className="tags-container container"
-                variants={container}
-                initial="hidden"
-                animate="visible"
-                >
-
+                <div className="tags-container">
                 {
                     prj.skills.map((skill, index)=>{
                         return <Tag key={index} skill={skill}/>
                     })
                 }
-                </motion.div>
+                </div>
             </div>
         </div>
 

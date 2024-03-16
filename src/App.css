@@ -30,15 +30,19 @@ section{
 /* Nav bar  */
 /* links */
 
-nav > ul > a{
+a{
   color: inherit;
   text-decoration: none;
 }
 
-nav > ul > a:hover{
+ a:hover{
   text-decoration: underline;
   text-decoration-color: var(--main-green);
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
+}
+
+.card-link{
+  margin-top: 18px;
 }
 
 /* * Nav bar Layout * */
@@ -91,7 +95,7 @@ section{
 
 /* Hero section  */
 .hero-section{
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 .green-sub-title {
@@ -227,6 +231,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  cursor: pointer;
 }
 .tag{
   background-color: var(--hover-blue);
@@ -351,7 +356,7 @@ footer{
   align-items: center;
   padding: 28px;
 }
-
+/* icon */
 /* responsive */
 
 
@@ -395,5 +400,9 @@ footer{
   /* skills subtitle */
   .section--sub-title {
     width: 90%;
+  }
+  /* hero */
+  .hero-section{
+    margin-top: 50px;
   }
 }

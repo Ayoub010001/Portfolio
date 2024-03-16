@@ -1,4 +1,7 @@
 import Button from "../components/Button"
+import { LiaLinkedin } from "react-icons/lia";
+import { HiOutlineMail } from "react-icons/hi";
+
 function Contacts() {
   return (
     <section id='contacts'>
@@ -8,11 +11,17 @@ function Contacts() {
         <div className="contacts">
           <div className="box-contact">
             <h4>Linkedin</h4>
-            <a target="_blank" href="https://www.linkedin.com/in/ayoub-ritoub/"><Button btnMsg="Visit My linkedin"/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/ayoub-ritoub/">
+              <Button btnMsg="Visit My linkedin">
+              </Button> 
+            </a>
           </div>
           <div className="box-contact">
             <h4>Email</h4>
-            <Button btnMsg="Contact Me"/>
+            <a target="_blank" href="https://www.linkedin.com/in/ayoub-ritoub/">
+              <Button btnMsg="Contact Me">
+              </Button>
+            </a>
           </div>
         </div>
       </div>

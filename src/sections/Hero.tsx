@@ -1,6 +1,7 @@
 import Button from "../components/Button"
-import { motion,useInView } from "framer-motion"
+import { useInView } from "framer-motion"
 import { useRef } from "react";
+
 
 function Hero() {
   const ref = useRef(null);
@@ -19,7 +20,8 @@ function Hero() {
         >I build things for the web.</h1>
         <p className="desc-text">I'm a software engineer specializing in building and designing <br></br>exceptional digital web applications using <span className="green-text">React JS</span>.</p>
         <a href='#contacts'>
-          <Button btnMsg="Contact Me" /> 
+          <Button btnMsg="Contact Me">
+          </Button> 
         </a>
       </div>
     </section>

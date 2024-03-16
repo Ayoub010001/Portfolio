@@ -4,7 +4,8 @@
             "image":"/imgs/visite2030.png",
             "title":"World Cup 2030 Stadium & Nearby Attractions Explorer",
             "post":"Front-End Web Developer | UI UX Designer",
-            "description":"Created a React JS application showcasing the 17 stadiums hosting the World Cup 2030 in Morocco, Spain, and Portugal, and highlighting nearby places of interest.",
+            "description":"Created a <span class='green-text'>React JS</span> application showcasing the 17 stadiums hosting the World Cup 2030 in Morocco, Spain, and Portugal, and highlighting nearby places of interest.",
+            "live":"https://jocular-longma-3d86a6.netlify.app/",
             "skills":[
                 "React" , "JavaScript", "CSS", "Git", "GitHub", "Figma"
             ]
@@ -13,7 +14,8 @@
             "image":"/imgs/ciamProjects.png",
             "title":"ENSAM Computer Science Club Website",
             "post":"Front-End | Back-end Web Developer",
-            "description":"Developed a website section titled 'Activities' for the club, Created an interactive interface allowing members to view upcoming events and revisit past ones.",
+            "description":"Developed a website section titled <span class='green-text'>Activities</span> for the club, Created an interactive interface allowing members to view upcoming events and revisit past ones.",
+            "live":"https://ciamcasa.com/activities",
             "skills":[
                 "HTML" , "JavaScript", "CSS", "php", "MySQL"
             ]
@@ -90,7 +92,7 @@
             "duration":"15 July - 15 Aug 2023 ",
             "title":"Employees Management System Development",
             "post":"Front-End | Back-end Web Developer",
-            "description":"Created a React JS application showcasing the 17 stadiums hosting the World Cup 2030 in Morocco, Spain, and Portugal, and highlighting nearby places of interest.",
+            "description":"Developed a user-friendly inter face optimizing navigation within the application. Implemented a backend system to efficiently <span class='green-text'>manage</span> and <span class='green-text'>visualize</span> employee profiles, work schedules, and absences.",
             "skills":[
                 "php" , "JavaScript", "CSS", "HTML", "Bootstrap", "ChartJS"
             ]

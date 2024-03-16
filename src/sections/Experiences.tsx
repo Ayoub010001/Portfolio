@@ -43,7 +43,7 @@ function Experiences() {
                       <p className="green-sub-title">{experience.post}</p>
                       <p className="experience-info">{experience.duration}</p>
                       <div className="card-desc-container">
-                        <p className="card-desc">{experience.description}</p>
+                        <p className="card-desc" dangerouslySetInnerHTML={{ __html: experience.description }} />
                       </div>
                       <motion.div className="tags-container"
                                       variants={container}
