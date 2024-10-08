@@ -10,7 +10,8 @@ interface SkillType{
 }
 
 const languages:SkillType[] = skills["Programming languages"];
-const tech:SkillType[] = skills["Web Technologies"];
+const tech:SkillType[] = skills["Web Technologies - Front-end"];
+const techBackEnd:SkillType[] = skills["Web Technologies - Back-end"];
 const others:SkillType[] = skills.others;
 
 function Skills() {
@@ -59,7 +60,7 @@ function Skills() {
             </div>
 
             <div className="sub-section-box">
-              <p className="card-main-title">Web Technologies:</p>
+              <p className="card-main-title">Web Technologies - Front-End:</p>
               <div className="skills-list"
                     ref={ref2}
                     style={{
@@ -81,6 +82,36 @@ function Skills() {
                   
                   key={index} className="skill-box">
                     <img src={skill.icon} alt={skill.name}/>
+                    <Tag skill={skill.name}/>
+                  </motion.div>
+                ))
+              }
+              </div>
+            </div>
+
+            <div className="sub-section-box">
+              <p className="card-main-title">Web Technologies Back-end:</p>
+              <div className="skills-list"
+                    ref={ref2}
+                    style={{
+                      transform: isInView2 ? "none" : "translateX(-200px)",
+                      opacity: isInView2 ? 1 : 0,
+                      transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s"
+                    }}
+              >
+              {
+                techBackEnd.map((skill,index)=>(
+                  <motion.div
+                  
+                  whileHover={{ scale: 1.2, rotate: 15 }}
+                  whileTap={{
+                    scale: 0.8,
+                    rotate: -15,
+                    borderRadius: "100%"
+                  }}
+                  
+                  key={index} className="skill-box">
+                    <img src={skill.icon} alt={skill.name} width={72}/>
                     <Tag skill={skill.name}/>
                   </motion.div>
                 ))

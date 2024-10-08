@@ -244,6 +244,7 @@ section{
 .tag-Name{
   font-size: 16px;
   font-family: "JetBrains Mono", Arial, sans-serif;
+  cursor: pointer;
 }
 
 /* skills */

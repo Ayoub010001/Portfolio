@@ -1,6 +1,16 @@
 {
     "projects":[
         {
+            "image":"/imgs/eventify.png",
+            "title":"Eventify: Development of an event management platform",
+            "post":"Full-stack Developer | UI UX Designer",
+            "description":"Development of a dedicated event management platform, allowing users to discover and interact with various events. I also designed the user Interface with Figma to ensure an optimal user experience.",
+            "live":"https://github.com/Ayoub010001/Eventify",
+            "skills":[
+                "FIGMA" , "HTML", "CSS", "Bootstrap", "Thymeleaf", "Spring Boot", "Spring MVC", "Spring Data JPA", "Spring Security", "MySQL", "Git", "Github"
+            ]
+        },
+        {
             "image":"/imgs/visite2030.png",
             "title":"World Cup 2030 Stadium & Nearby Attractions Explorer",
             "post":"Front-End Web Developer | UI UX Designer",
@@ -40,7 +50,7 @@
              "icon":"/icons/php.png"
             }
         ],
-        "Web Technologies":[
+        "Web Technologies - Front-end":[
             {
                 "name":"React",
                 "icon":"/icons/react.png"
@@ -66,6 +76,28 @@
              "icon":"/icons/jquery.png"
             }
         ],
+        "Web Technologies - Back-end":[
+            {
+                "name":"Spring",
+                "icon":"/icons/springLogo.png"
+            },
+            {
+                "name":"Spring Boot",
+                "icon":"/icons/springboot.png"
+            },
+            {
+                "name":"Thymeleaf",
+                "icon":"/icons/thymeleaf.png"
+            },
+            {
+             "name":"Spring Security",
+             "icon":"/icons/springSecurity.png"
+            },
+            {
+             "name":"Spring Data JPA",
+             "icon":"/icons/springdatajpa.png"
+            }
+        ],
         "others":[
             {
                 "name":"MySQL",
@@ -87,6 +119,16 @@
 
     },
     "experiences":[
+        {
+            "company":"WHD AGENCY",
+            "duration":"6 May – 6 July 2024",
+            "title":"A SAAS Solution for Restaurant Digitalization",
+            "post":"Front-End Developer Intern",
+            "description":"Contributed to the development of Garista, a SAAS platform for digitizing the restaurant experience. <span class='green-text'>Developed responsive user interfaces</span>Developed responsive user interfaces using React.js and Tailwind CSS, including a multi-step registration process with real-time menu previews. Collaborated with the back-end team to <span class='green-text'>integrate REST APIs</span> and tested functionality using Postman.",
+            "skills":[
+                "React.js" , "JavaScript", "CSS", "HTML", "TailwindCSS", "Shadcn", "Git", "Github", "Postman", "REST API" 
+            ]
+        },
         {
             "company":"TicEscort",
             "duration":"15 July - 15 Aug 2023 ",

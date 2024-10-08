@@ -41,7 +41,7 @@ function Card({prj}:CardProps) {
                     <p className="card-desc" dangerouslySetInnerHTML={{ __html: prj.description }}/>
                     {
                       prj.live !== "" && <div className='card-link'>
-                        <a target='_blank' href={prj.live}><p className='green-text'>Live version <FiExternalLink /></p></a>
+                        <a target='_blank' href={prj.live}><p className='green-text'>See more <FiExternalLink /></p></a>
                       </div>
                     }
   
